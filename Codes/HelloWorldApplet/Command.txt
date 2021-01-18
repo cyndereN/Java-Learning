@@ -1,0 +1,3 @@
+javac HelloWorldApplet.java
+
+appletViewer HelloWorldApplet.html
