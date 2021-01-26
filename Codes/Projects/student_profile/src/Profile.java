@@ -17,4 +17,5 @@ public class Profile {
     public void incrementExpectedGraduationYear() {
         this.expectedYearToGraduate = this.expectedYearToGraduate + 1;
     }
+
 }
