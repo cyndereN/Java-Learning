@@ -1,0 +1,29 @@
+test2.txt result
+
+Wrong-spelled words list: 
+	worlld(row: 1,column: 4)
+	eternety(row: 7,column: 2)
+
+Total words: 29
+Accuracy: 93.1%
+
+Frequency table:
+	a: 4
+	in: 4
+	palm: 1
+	your: 1
+	an: 1
+	heaven: 1
+	flower: 1
+	the: 1
+	sand: 1
+	see: 1
+	hour: 1
+	And: 2
+	of: 2
+	infinity: 1
+	To: 1
+	grain: 1
+	wild: 1
+	Hold: 1
+	hand: 1
