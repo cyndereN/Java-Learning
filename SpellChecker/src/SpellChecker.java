@@ -39,7 +39,7 @@ public class SpellChecker {
         handleString(s, words);
         //System.out.println(s);
         for(int i=0 ; i<words.size() ; i++){
-            if(dictionary.contains(words.get(i)))
+            if(dictionary.binarySearchContains(words.get(i)))      //More efficient since dictionary is ordered
                 correctWordCounter += 1;
             else{
                 System.out.println("Cannot find word: "+words.get(i) +"(index: "+i+") in dictionary.");
@@ -74,7 +74,7 @@ public class SpellChecker {
                 handleString(in.nextLine(), words);
                 totalWordCounter += words.size();
                 for(int i=0 ; i<words.size() ; i++){
-                    if(dictionary.contains(words.get(i)))
+                    if(dictionary.binarySearchContains(words.get(i)))
                         correctWords.add(words.get(i));
                     else{
                         fw.write("\t" + words.get(i) +"(row: "+rowCounter+",column: "+(i+1)+")\n");

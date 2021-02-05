@@ -4,13 +4,14 @@ public class StringArrayTest {
         StringArray a = new StringArray();
 
         for(int i=0; i<15; i++){
-            a.add(i+"");
+            a.add(i+"");  //convert to string
         }
 
         for (int i=0; i<a.size(); i++){
             System.out.println(a.get(i));
-
         }
+
+        System.out.println(a.binarySearchContains("3"));
 
         a.set(10,null);
 

@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class StringArray {
 
     private static final int DEFAULT_SIZE = 10; //Default length of array (different from size)
@@ -173,6 +175,24 @@ public class StringArray {
 
         return false;
 
+    }
+
+    // Improved version, only for sorted data
+    public boolean binarySearchContains(String s){
+
+        int low = 0;
+        int high = size-1;
+        while(low<=high) {
+            int mid = (low+high)/2;
+            if(elements[mid].equalsIgnoreCase(s)) {
+                return true;
+            }else if(elements[mid].toLowerCase().compareTo(s.toLowerCase())>0) {
+                high = mid-1;
+            }else {
+                low = mid+1;
+            }
+        }
+        return false;
     }
 
     public boolean containsMatchingCase(String s){
