@@ -6,7 +6,7 @@
 *      实现的方式更适合处理多个线程有共享数据的情况
 * */
 
-class Window1 implements Runnable{
+class Windoww implements Runnable{
     private int ticket = 100; // 不用加static
     @Override
     public void run() {
@@ -23,7 +23,7 @@ class Window1 implements Runnable{
 
 public class RunnableWindowTest {
     public static void main(String[] args) {
-        Window1 w = new Window1();
+        Windoww w = new Windoww();
 
         Thread t1 = new Thread(w);
         Thread t2 = new Thread(w);
