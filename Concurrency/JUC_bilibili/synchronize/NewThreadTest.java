@@ -1,4 +1,4 @@
-/*
+package synchronize;/*
 * 多线程的创建：方式1：继承于thread类
 * 1. 创建一个继承于Thread类的子类
 * 2. 重写Thread类的run()

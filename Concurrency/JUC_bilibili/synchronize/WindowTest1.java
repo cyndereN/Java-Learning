@@ -1,3 +1,5 @@
+package synchronize;
+
 class Window1 extends Thread{
 
     private static int ticket = 100;

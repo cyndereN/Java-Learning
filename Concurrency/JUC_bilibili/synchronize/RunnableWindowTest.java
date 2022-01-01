@@ -1,4 +1,4 @@
-// 也存在线程安全问题
+package synchronize;// 也存在线程安全问题
 
 /*
 * 开发中优先选择实现runnable接口方式

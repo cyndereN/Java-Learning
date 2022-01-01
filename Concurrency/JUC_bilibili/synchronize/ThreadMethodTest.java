@@ -1,4 +1,4 @@
-// stop() 强制结束
+package synchronize;// stop() 强制结束
 // isAlive() 判断是否活着
 // sleep(long millisecond) 让当前线程"睡眠"指定的毫秒数，在指定毫秒时间内，当前线程是阻塞状态
 

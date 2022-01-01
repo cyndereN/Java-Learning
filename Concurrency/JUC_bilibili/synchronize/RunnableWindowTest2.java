@@ -1,4 +1,4 @@
-/*
+package synchronize;/*
 * 使用同步方法 解决runnable接口安全问题
 * */
 

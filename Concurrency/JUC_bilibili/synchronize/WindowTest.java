@@ -1,4 +1,4 @@
-/*
+package synchronize;/*
 * 创建三个c窗口卖票，总票数100张(继承Thread类的方式)
 *
 * 存在安全问题，待解决
