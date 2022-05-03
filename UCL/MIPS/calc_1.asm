@@ -1,11 +1,11 @@
 # Calculator Version 1.0
 # This adds together three 32-bit words
 # and puts the result back into memory.
-	.data
+.data
 vals:	.word 4, 5, 8, 0
 
-	.text
-	.globl main
+.text
+.globl main
 main:
 	la  $4, vals	        # Load $4 with the address of label 'vals'.
 	add $8, $0, $0	        # Set sum to zero

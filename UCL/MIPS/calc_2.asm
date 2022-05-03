@@ -11,7 +11,7 @@ vals:	.byte -5, 80, 80, 0
 main:
 	la  $4, vals	# Load $4 with the address of label 'vals'.
 	add $8, $0, $0	# Set sum to zero
-	lbu  $9, 0($4)	# Get first number from memory
+	lb  $9, 0($4)	# Get first number from memory
 	add $8, $8, $9  # Add to sum
 	lbu  $9, 1($4)	# Get second number from memory
 	add $8, $8, $9	# Add to sum
@@ -19,6 +19,10 @@ main:
 	add $8, $8, $9	# Add to sum
 	sb  $8, 3($4)  # Save the result to memory.
 
+        lb $a0,0($4)  # -5, while lbu 251251251
+	li $v0, 1
+	syscall 
+	
 	li $v0 10       # Exit program using system call 10.
 	syscall         # syscall 10 (exit)
 
