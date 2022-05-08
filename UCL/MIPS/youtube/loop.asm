@@ -13,6 +13,7 @@ li  $t1, 0
 
 ble  $t0, 100, loop 
 
+# more like do while
 loop:
 add $t1, $t1, $t0
 add $t0, $t0, 1
