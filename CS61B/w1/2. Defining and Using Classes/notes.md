@@ -1,0 +1,5 @@
+- **Static vs. Instance methods**. The distinction between static and instance methods is incredibly important. Instance methods are actions that can only be taken by an instance of the class (i.e. a specific object), whereas static methods are taken by the class itself. An instance method is invoked using a reference to a specific instance, e.g. d.bark(), whereas static methods should be invoked using the class name, e.g. Math.sqrt(). Know when to use each.
+
+- **Static variables**. Variables can also be static. Static variables should be accessed using the class name, e.g. Dog.binomen as opposed to d.binomen. Technically Java allows you to access using a specific instance, but we strongly encourage you not to do this to avoid confusion.
+
+- **Command Line Arguments**. Arguments can be provided by the operating system to your program as “command line arguments,” and can be accessed using the args parameter in main. For example if we call our program from the command line like this ```java ArgsDemo these are command line arguments```, then the main method of ArgsDemo will have an array containing the Strings “these”, “are”, “command”, “line”, and “arguments”.
