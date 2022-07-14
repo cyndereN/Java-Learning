@@ -39,3 +39,30 @@ public class HelloWorld {
 **Golden Rule of Equals** "Create box, Copy bits". For primitives, the line int y = x copies the bits inside the x box into the y box. For reference types, we do the exact same thing. In the line Walrus newWalrus = oldWalrus;, we copy the 64 bit address in the oldWalrus box into the newWalrus box. So we can think of this golden rule of equals (GroE) as: when we assign a value with equals, we are just copying the bits from one memory box to another!
 
 **Parameter Passing** Say we have a method average(double a, double b). This method takes two doubles as parameters. Parameter passing also follows the GRoE, i.e. when we call this method and pass in two doubles, we copy the bits from those variables into the parameter variables.
+
+## List 2
+From IntList to SLList:
+1. Rebranding: IntList -> IntNode
+2. Bureaucracy: SLList
+3. Access Control: public -> private
+4. Nested class: Bringing IntNode into SLList
+5. Caching: Saving size as an int
+6. Generalizing: Adding a sentinel node to allow representation of the empty list
+
+## DLList and ArrayList
+SLList: Inserting at back is much slower
+Solution: Change the node to have 2 pointer fields (prev and next), 
+2 sentinel or 1 circular sentinel
+
+
+**Array**: do not have methods; fixed length; same type; use [] notation
+**Instantiating Arrays** 
+int[] z = null; // z: 64 bits, all 0s
+int[] y = new int[3];
+int[] x = new int[]{1, 2, 3, 4, 5};
+int[] w = {1, 2, 3, 4, 5};
+
+int[][] array = new int[4][];
+array[0] = new int[]{0, 1, 2, 3};
+int[][] array = new int[4][4];
+int[][] array = new int[][]{{1}, {1, 2}, {1, 2, 3}};
